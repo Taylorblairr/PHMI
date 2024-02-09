@@ -14,6 +14,8 @@ from .serializer import ProductSerializer, UserSerializer, UserSerializerWithTok
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 
+from django.contrib.auth.hashers import make_password
+
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)
@@ -27,23 +29,21 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
-@api_view(['GET'])
-def getRoutes(request):
-    routes = [
-    '/api/products/',
-    '/api/products/create/',
 
-    '/api/products/upload/',
+@api_view(['POST'])
+def registerUser(request):
+    data = request.data
 
-    '/api/products/<id>/reviews/',
+    user = User.objects.create(
+            first_name=data['name'],
+            username=data['email'],
+            email=data['email'],
+            password=make_password(data['password']),
+        )
 
-    '/api/products/top/',
-    '/api/products/<id>/',
-
-    '/api/products/delete/<id>/',
-    '/api/products/<update>/<id>/',
-    ]
-    return Response(routes)
+    serializer = UserSerializerWithToken(user, many=False)
+    return Response(serializer.data)
+    
 
 
 @api_view(['GET'])
