@@ -50,15 +50,8 @@ function ProductScreen({ match, history }) {
                 <h3>{product.name}</h3>
               </ListGroup.Item>
 
-              <ListGroup.Item>
-                <Rating
-                  value={product.rating}
-                  text={`${product.numReviews} Ratings`}
-                  color={"#f8e825"}
-                />
-              </ListGroup.Item>
 
-              <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+              
 
               <ListGroup.Item>
                 description: {product.description}
@@ -91,7 +84,7 @@ function ProductScreen({ match, history }) {
                     <ListGroup.Item>
                       <Row>
                         <Col>Qty</Col>
-                        <Col xs='auto' className="my-1">
+                        <Col xs={3} className="my-0">
                         <Form.Control
                             as='select'
                             value={qty}
