@@ -6,20 +6,20 @@ from .models import Product, Order, OrderItem, ShippingAddress
 
 
     
-# class UserSerializerWithToken(UserSerializer):
-#         token = serializers.SerializerMethodField(read_only=True)
-#         class Meta:
-#             model = User
-#         fields = ['id', '_id', 'username', 'email', 'name', 'isAdmin', 'token']
 
-#         def get_token(self, obj):
-#             token = RefreshToken.for_user(obj)
-#             return str(token.access_token)
 
 class ProductSerializer(serializers.ModelSerializer):
+    # reviews = serializers.SerializerMethodField(read_only=True)
+
     class Meta:
         model = Product
         fields = '__all__'
+
+    # def get_reviews(self, obj):
+    #     reviews = obj.review_set.all()
+    #     serializer = ReviewSerializer(reviews, many=True)
+    #     return serializer.data
+
 
 class ShippingAddressSerializer(serializers.ModelSerializer):
     class Meta:
@@ -43,14 +43,14 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def get_orderItems(self, obj):
-        items = obj.orderItem_set.all()
+        items = obj.orderitem_set.all()
         serializer = OrderItemSerializer(items, many=True)
         return serializer.data
 
     def get_shippingAddress(self, obj):
         try:
             address = ShippingAddressSerializer(
-                obj.shippingAddress, many=False).data
+                obj.shippingaddress, many=False).data
         except:
             address = False
         return address
