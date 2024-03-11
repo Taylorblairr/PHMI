@@ -9,16 +9,88 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin-top: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* div {
+  z-index: 1;
+} */
+
+.werm {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  height: 150px;
+  width: 150px;
+  z-index: 4;
+}
+
+.box1 {
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100;
+  background-color: rgba(0, 0, 0, 0.185);
+
+  vertical-align: top;
+  z-index: 3;
+  animation-name: box1;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+.navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  animation-name: nav;
+  animation-duration: 7.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.nav-selectors {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgb(69, 71, 81);
+}
+
 main {
   min-height: 80vh;
 }
 .bg {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
+  width: max-content;
+  height: max-content;
+  position: absolute;
   overflow-y: hidden;
   overflow-x: hidden;
-  top: -100px;
+  top: -150px;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: optimizeQuality;
@@ -41,10 +113,6 @@ h3 {
 
 .title {
   top: 1000px;
-}
-.werm {
-  height: 100px;
-  width: 100px;
 }
 
 Header .rating span {

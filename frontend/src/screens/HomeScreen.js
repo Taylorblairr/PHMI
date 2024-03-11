@@ -20,6 +20,7 @@ function HomeScreen({ history }) {
 
   return (
     <div>
+      <img class="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
       {/* {!keyword && <ProductCarousel />} */}
 
       <h1>Latest Products</h1>
