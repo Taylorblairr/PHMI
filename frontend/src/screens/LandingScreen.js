@@ -8,8 +8,8 @@ function LandingScreen() {
       <nav class="navbar">
         <ul class="link-selectors"></ul>
         <ul class="nav-selectors">
-          <a class="nav-link" href="https://www.linkedin.com/in/taylor-blairr/">
-            LinkedIn
+          <a class="nav-link" href="/cart">
+            Cart
           </a>
         </ul>
       </nav>
