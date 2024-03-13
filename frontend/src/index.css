@@ -17,8 +17,16 @@ body {
   overflow-y: hidden;
 }
 
-.title {
-  z-index: 2;
+h1 {
+  font-size: 5rem;
+  padding: 1rem 0;
+}
+.word {
+  position: absolute;
+
+  top: 300px;
+  left: 100px;
+  z-index: 1;
 }
 .werm {
   position: absolute;
@@ -99,11 +107,6 @@ main {
   z-index: 0;
 }
 
-h1 {
-  font-size: 5rem;
-  padding: 1rem 0;
-  z-index: 1;
-}
 h2 {
   font-size: 1.4rem;
   padding: 0.5rem 0;
