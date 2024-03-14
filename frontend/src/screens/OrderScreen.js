@@ -90,6 +90,16 @@ function OrderScreen({ match, history }) {
     <Message variant="danger">{error}</Message>
   ) : (
     <div>
+      <p class="box1"></p>
+
+      <nav class="navbar">
+        <ul class="link-selectors"></ul>
+        <ul class="nav-selectors">
+          <a class="nav-link" href="/cart">
+            Cart
+          </a>
+        </ul>
+      </nav>
       <h1>Order: {order.Id}</h1>
       <Row>
         <Col md={8}>

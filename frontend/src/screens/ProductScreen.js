@@ -32,6 +32,16 @@ function ProductScreen({ match, history }) {
 
   return (
     <div>
+      <p class="box1"></p>
+
+      <nav class="navbar">
+        <ul class="link-selectors"></ul>
+        <ul class="nav-selectors">
+          <a class="nav-link" href="/cart">
+            Cart
+          </a>
+        </ul>
+      </nav>
       <Link to="/" className="btn btn-light my-3">
         Back
       </Link>

@@ -15,10 +15,8 @@ function LandingScreen() {
         </ul>
       </nav>
       <div>
-        {/* <Navbar /> */}
-
         <img class="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
-        <h1 class="word">Please Hate Me Inc.</h1> 
+        <h1 class="word">Please Hate Me Inc.</h1>
       </div>
     </body>
   );

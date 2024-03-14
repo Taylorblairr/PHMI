@@ -20,6 +20,16 @@ function HomeScreen({ history }) {
 
   return (
     <div>
+      <p class="box1"></p>
+
+      <nav class="navbar">
+        <ul class="link-selectors"></ul>
+        <ul class="nav-selectors">
+          <a class="nav-link" href="/cart">
+            Cart
+          </a>
+        </ul>
+      </nav>
       <img class="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
       {/* {!keyword && <ProductCarousel />} */}
 

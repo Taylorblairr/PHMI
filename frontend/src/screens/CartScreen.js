@@ -37,6 +37,16 @@ function CartScreen({ match, location, history }) {
 
   return (
     <Row>
+      <p class="box1"></p>
+
+      <nav class="navbar">
+        <ul class="link-selectors"></ul>
+        <ul class="nav-selectors">
+          <a class="nav-link" href="/cart">
+            Cart
+          </a>
+        </ul>
+      </nav>
       <Col md={8}>
         <h1>Cart</h1>
         {cartItems.length === 0 ? (
