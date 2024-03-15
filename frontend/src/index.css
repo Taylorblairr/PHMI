@@ -8,7 +8,10 @@
   background: transparent;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+div {
+  position: flex;
+  z-index: 1;
+}
 body {
   margin-top: 0;
   margin: 0px;
@@ -28,13 +31,14 @@ h1 {
   top: 300px;
   left: 300px;
   z-index: 1;
+  text-decoration: none;
 }
 .werm {
   position: absolute;
-  top: -22px;
-  left: 40px;
-  height: 100px;
-  width: 100px;
+  top: -20px;
+  left: 35px;
+  height: 98px;
+  width: 98px;
   z-index: 5;
 }
 
@@ -121,4 +125,36 @@ h3 {
 
 Header .rating span {
   margin: 0.1rem;
+}
+.productbox {
+  margin: 16px auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+.productbox li {
+  display: inline-block;
+  flex: 1 1 12em;
+  border: 2px solid #6f0212;
+  border-radius: 25px;
+  margin: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.productbox a {
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+}
+.productbox img {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
 }

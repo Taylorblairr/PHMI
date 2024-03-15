@@ -4,19 +4,23 @@ import React from "react";
 function LandingScreen() {
   return (
     <body>
-      <p class="box1"></p>
+      <p className="box1"></p>
 
-      <nav class="navbar">
-        <ul class="link-selectors"></ul>
-        <ul class="nav-selectors">
-          <a class="nav-link" href="/cart">
+      <nav className="navbar">
+        <ul className="link-selectors"></ul>
+        <ul className="nav-selectors">
+          <a className="nav-link" href="/cart">
             Cart
           </a>
         </ul>
       </nav>
       <div>
-        <img class="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
-        <h1 class="word">Please Hate Me Inc.</h1>
+        <img className="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
+        <section className="link-container">
+          <a className="word" href="/home">
+            Please Hate Me Inc.
+          </a>
+        </section>
       </div>
     </body>
   );
