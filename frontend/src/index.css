@@ -123,16 +123,18 @@ h3 {
   padding: 1rem 0;
 }
 
-Header .rating span {
+/* Header .rating span {
   margin: 0.1rem;
-}
+} */
 .productbox {
-  margin: 16px auto;
+  margin: 16px;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  height: 250px;
+  width: 300px;
+  /* flex-flow: wrap; */
+  justify-content: space-between;
 }
 .productbox li {
   display: inline-block;
@@ -141,21 +143,24 @@ Header .rating span {
   border-radius: 25px;
   margin: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  float: right;
 }
 
 .productbox a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   padding: 8px;
   height: 100%;
   width: 100%;
+  float: right;
 }
 
 .productbox img {
-  display: block;
+  display: inline-block;
   width: 400px;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 20px;
+  float: right;
 }
