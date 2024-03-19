@@ -41,9 +41,18 @@ function HomeScreen({ history }) {
         <div className="productbox">
           <Row>
             {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                <Product product={product} />
-              </Col>
+              <ul>
+                <Col
+                  className="pcol"
+                  key={product._id}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  xl={3}
+                >
+                  <Product product={product} />
+                </Col>
+              </ul>
             ))}
           </Row>
           <Paginate page={page} pages={pages} keyword={keyword} />
