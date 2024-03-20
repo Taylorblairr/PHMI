@@ -16,7 +16,7 @@ def getProducts(request):
     products = Product.objects.filter(name__icontains=query)
 
     page = request.query_params.get('page')
-    paginator = Paginator(products, 10)
+    paginator = Paginator(products, 150)
 
     try:
         products = paginator.page(page)

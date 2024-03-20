@@ -128,25 +128,47 @@ h3 {
 } */
 
 .pcol {
-  display: flex;
+  position: relative;
   float: left;
+  /* padding: 0; */
+  /* width: 19%; */
+  /* margin-right: ; */
 }
 
 .productbox {
   margin-left: 50px;
   flex: 1 1 12em;
-  border: 2px solid #6f0212;
+  /* border: 2px solid #6f0212; */
   border-radius: 25px;
   margin: 8px;
 }
 
 .productbox img {
-  display: flex;
-  width: 250px;
+  display: inline;
+  width: 180px;
   max-width: 100%;
   max-width: 100%;
 
   margin: 5px;
   /* border-radius: 20px; */
   float: right;
+  animation-name: cover;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cover {
+  0% {
+    opacity: 0;
+    color: #000000;
+  }
+  50% {
+    opacity: 0;
+    color: #000000;
+  }
+  100% {
+    opacity: 1;
+    color: #000;
+  }
 }
