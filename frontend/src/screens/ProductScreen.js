@@ -43,28 +43,40 @@ function ProductScreen({ match, history }) {
           </a>
         </ul>
       </nav>
-      <Link to="/" className="btn btn-light my-3">
-        Back
-      </Link>
+      <img class="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
         <Row>
-          <Col md={6}>
-            <Image src={product.image} alt={product.name} fluid />
-          </Col>
           <Col md={3}>
             <ListGroup variant="flush">
-              <ListGroup.Item>
+              <ListGroup.Item className="itemname">
                 <h3>{product.name}</h3>
               </ListGroup.Item>
 
-              <ListGroup.Item>
-                description: {product.description}
+              <ListGroup.Item className="artistname">
+                {product.description}
               </ListGroup.Item>
             </ListGroup>
+          </Col>
+          <Col md={6}>
+            <Image
+              className="productimg1"
+              src={product.image}
+              alt={product.name}
+              fluid
+            />
+            <button className="btn1" type="button">
+              Listen
+            </button>
+            <button className="btn2" type="button">
+              BandCamp
+            </button>
+            <button className="btn3" type="button">
+              Released
+            </button>
           </Col>
 
           <Col md={3}>

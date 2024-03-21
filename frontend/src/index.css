@@ -130,9 +130,7 @@ h3 {
 .pcol {
   position: relative;
   float: left;
-  /* padding: 0; */
-  /* width: 19%; */
-  /* margin-right: ; */
+  top: 40px;
 }
 
 .productbox {
@@ -171,4 +169,67 @@ h3 {
     opacity: 1;
     color: #000;
   }
+}
+
+.productimg1 {
+  position: relative;
+  top: -50px;
+  left: 10px;
+  height: 650px;
+  width: 650px;
+}
+
+.itemname {
+  position: relative;
+  font-size: 60px;
+  bottom: 20px;
+  margin-left: 10px;
+}
+.artistname {
+  position: relative;
+  font-size: 40px;
+  bottom: 55px;
+  margin-left: 15px;
+}
+
+.btn1 {
+  background-color: #04aa6d; /* Green */
+
+  color: white;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: -640px;
+  top: -10px;
+}
+
+.btn2 {
+  background-color: #04aa6d; /* Green */
+
+  color: white;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 220px;
+  top: -100px;
+}
+
+.btn1 {
+  background-color: #04aa6d; /* Green */
+
+  color: white;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: -640px;
+  top: -10px;
 }
