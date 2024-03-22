@@ -51,7 +51,7 @@ h1 {
   top: 0px;
   left: 0px;
   height: 50px;
-  width: 100;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.185);
 
   vertical-align: top;
@@ -105,20 +105,16 @@ main {
   min-height: 80vh;
 }
 .bg {
-  /* width: max-content;
-  height: max-content; */
   position: absolute;
-  /* overflow-y: hidden;
-  overflow-x: hidden; */
-  /* /* background-repeat: no-repeat; */
-  background-size: auto;
-  image-rendering: optimizeQuality;
-  image-rendering: crisp-edges;
+  background-repeat: repeat;
+  /* background-size: auto; */
+  /* image-rendering: optimizeQuality; */
+  /* image-rendering: crisp-edges; */
   /* z-index: 0; */
-  width: fit-content;
+  /* width: fit-content; */
 
-  margin: 0 auto;
-  height: fit-content;
+  /* margin: 0 auto; */
+  /* height: fit-content; */
 }
 
 h2 {
@@ -202,7 +198,7 @@ h3 {
 }
 
 .btn1 {
-  background-color: #71787e;
+  background-color: #71787e8d;
 
   color: white;
   padding: 20px 74px;
@@ -216,8 +212,7 @@ h3 {
 }
 
 .btn2 {
-  background-color: #71787e;
-
+  background-color: #71787e8d;
   color: white;
   padding: 20px 73px;
   text-align: center;
@@ -230,8 +225,7 @@ h3 {
 }
 
 .btn3 {
-  background-color: #71787e;
-
+  background-color: #71787e8d;
   color: white;
   padding: 20px 73px;
   text-align: center;
