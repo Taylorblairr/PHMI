@@ -8,6 +8,7 @@
   background: transparent;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 div {
   position: flex;
   z-index: 1;
@@ -24,6 +25,8 @@ h1 {
   font-size: 5rem;
   padding: 1rem 0;
 }
+
+/* //////////////////////          LANDING PAGE   //////////////////////////////////// */
 .word {
   position: absolute;
   font-size: xx-large;
@@ -102,17 +105,20 @@ main {
   min-height: 80vh;
 }
 .bg {
-  width: max-content;
-  height: max-content;
+  /* width: max-content;
+  height: max-content; */
   position: absolute;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  top: -150px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+  /* /* background-repeat: no-repeat; */
+  background-size: auto;
   image-rendering: optimizeQuality;
   image-rendering: crisp-edges;
-  z-index: 0;
+  /* z-index: 0; */
+  width: fit-content;
+
+  margin: 0 auto;
+  height: fit-content;
 }
 
 h2 {
@@ -126,6 +132,8 @@ h3 {
 /* Header .rating span {
   margin: 0.1rem;
 } */
+
+/* //////////////////////          Home Page   //////////////////////////////////// */
 
 .pcol {
   position: relative;
@@ -146,14 +154,14 @@ h3 {
   width: 180px;
   max-width: 100%;
   max-width: 100%;
-
+  /* z-index: 3; */
   margin: 5px;
   /* border-radius: 20px; */
   float: right;
   animation-name: cover;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-delay: 0s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 @keyframes cover {
@@ -161,7 +169,7 @@ h3 {
     opacity: 0;
     color: #000000;
   }
-  50% {
+  40% {
     opacity: 0;
     color: #000000;
   }
@@ -170,13 +178,14 @@ h3 {
     color: #000;
   }
 }
-
+/* //////////////////////          Product page   //////////////////////////////////// */
 .productimg1 {
   position: relative;
   top: -50px;
   left: 10px;
   height: 650px;
   width: 650px;
+  float: left;
 }
 
 .itemname {
@@ -193,43 +202,43 @@ h3 {
 }
 
 .btn1 {
-  background-color: #04aa6d; /* Green */
+  background-color: #71787e;
 
   color: white;
-  padding: 20px 80px;
+  padding: 20px 74px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   position: relative;
   left: -640px;
-  top: -10px;
+  top: 605px;
 }
 
 .btn2 {
-  background-color: #04aa6d; /* Green */
+  background-color: #71787e;
 
   color: white;
-  padding: 20px 80px;
+  padding: 20px 73px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   position: relative;
-  left: 220px;
-  top: -100px;
+  left: -630px;
+  top: 605px;
 }
 
-.btn1 {
-  background-color: #04aa6d; /* Green */
+.btn3 {
+  background-color: #71787e;
 
   color: white;
-  padding: 20px 80px;
+  padding: 20px 73px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   position: relative;
-  left: -640px;
-  top: -10px;
+  left: -620px;
+  top: 605px;
 }
