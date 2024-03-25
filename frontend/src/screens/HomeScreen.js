@@ -30,7 +30,7 @@ function HomeScreen({ history }) {
           </a>
         </ul>
       </nav>
-      <img class="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
+      <img class="bg" src="https://i.imgur.com/0vjgoXd.jpeg" />
       {/* {!keyword && <ProductCarousel />} */}
 
       {loading ? (
@@ -45,10 +45,10 @@ function HomeScreen({ history }) {
                 <Col
                   className="pcol"
                   key={product._id}
-                  sm={12}
-                  md={6}
-                  lg={4}
-                  xl={3}
+                  sm={10}
+                  md={7}
+                  lg={5}
+                  xl={4}
                 >
                   <Product product={product} />
                 </Col>

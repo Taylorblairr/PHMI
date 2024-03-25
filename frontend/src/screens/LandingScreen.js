@@ -15,7 +15,7 @@ function LandingScreen() {
         </ul>
       </nav>
       <div>
-        <img className="bg" src="https://i.imgur.com/jZSpngh.jpeg" />
+        <img className="bg" src="https://i.imgur.com/0vjgoXd.jpeg" />
         <section className="link-container">
           <a className="word" href="/home">
             Please Hate Me Inc.
