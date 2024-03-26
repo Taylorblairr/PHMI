@@ -106,7 +106,7 @@ h1 {
   /* overflow-y: hidden; */
   position: fixed;
   width: 100vw;
-  height: 120vh;
+  height: 150vh;
   top: -90px;
   background-repeat: repeat;
   /* background-size: auto; */
@@ -179,8 +179,9 @@ h3 {
 /* //////////////////////          Product page   //////////////////////////////////// */
 .productimg1 {
   position: relative;
-  top: -50px;
-  left: 10px;
+  top: 0.1vh;
+  left: 0.5vw;
+  /* align-self: center; */
   height: 650px;
   width: 650px;
   float: left;
@@ -189,13 +190,13 @@ h3 {
 .itemname {
   position: relative;
   font-size: 60px;
-  bottom: 20px;
+  bottom: -25px;
   margin-left: 10px;
 }
 .artistname {
   position: relative;
   font-size: 40px;
-  bottom: 55px;
+  bottom: 10px;
   margin-left: 15px;
 }
 
