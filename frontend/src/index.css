@@ -135,7 +135,8 @@ h3 {
 }
 
 .productbox {
-  margin-left: 120px;
+  margin-left: 100px;
+  margin-right: 60px;
   margin-top: 50px;
   flex: 1 1 12em;
   /* border: 2px solid #6f0212; */
@@ -207,11 +208,11 @@ h3 {
   padding: 20px 74px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: fixed;
   font-size: 16px;
-  position: relative;
-  left: -640px;
-  top: 605px;
+  position: absolute;
+  left: 10px;
+  top: 847px;
 }
 
 .btn2 {
@@ -220,11 +221,11 @@ h3 {
   padding: 20px 73px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: fixed;
   font-size: 16px;
-  position: relative;
-  left: -630px;
-  top: 605px;
+  position: absolute;
+  left: 210px;
+  top: 847px;
 }
 
 .btn3 {
@@ -233,9 +234,9 @@ h3 {
   padding: 20px 73px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: fixed;
   font-size: 16px;
-  position: relative;
-  left: -620px;
-  top: 605px;
+  position: absolute;
+  left: 445px;
+  top: 847px;
 }
